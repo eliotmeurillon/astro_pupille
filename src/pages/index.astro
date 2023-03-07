@@ -1,7 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
-import logo_pupille from "../public/logo_pupille.svg";
+import logo_pupille from "/logo_pupille.svg";
+import RandomGenerator from "../components/RandomGenerator.jsx";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -22,11 +23,14 @@ import logo_pupille from "../public/logo_pupille.svg";
           </h2>
         </div>
       </div>
-      <div class="flex flex-col items-center justify-center">
+      <div class="flex flex-col items-center justify-center text-center">
         <div
           class="px-1 py-1 bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30"
         >
-          <h1 class="text-white text-4xl font-bold">Texte au milieu</h1>
+          <h1 class="text-white text-4xl font-bold">test</h1>
+          <astro:fragment>
+            <RandomGenerator />
+          </astro:fragment>
         </div>
       </div>
     </div>
