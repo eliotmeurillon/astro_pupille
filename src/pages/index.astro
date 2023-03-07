@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import logo_pupille from "../public/logo_pupille.svg";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -9,11 +10,24 @@ import Card from "../components/Card.astro";
       class="h-screen bg-cover grid grid-cols-1 grid-rows-3"
       style={{ backgroundImage: "url(/background.png)" }}
     >
-      <h2 class="text-center text-white text-2xl font-bold self-center">
-        Texte en haut de l'écran
-      </h2>
+      <div class="flex flex-col items-center justify-evenly">
+        <div>
+          <img src={logo_pupille} alt="svg icon" />
+        </div>
+        <div
+          class="px-1 py-1 bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30"
+        >
+          <h2 class="text-white text-2xl font-bold">
+            Texte en haut de l'écran
+          </h2>
+        </div>
+      </div>
       <div class="flex flex-col items-center justify-center">
-        <h1 class="text-white text-4xl font-bold">Texte au milieu</h1>
+        <div
+          class="px-1 py-1 bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30"
+        >
+          <h1 class="text-white text-4xl font-bold">Texte au milieu</h1>
+        </div>
       </div>
     </div>
   </main>
