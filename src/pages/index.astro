@@ -16,18 +16,17 @@ import RandomGenerator from "../components/RandomGenerator.jsx";
           <img src={logo_pupille} alt="svg icon" />
         </div>
         <div
-          class="px-1 py-1 bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30"
+          class="px-1 py-1 text-center bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30"
         >
-          <h2 class="text-white text-2xl font-bold">
-            Texte en haut de l'écran
-          </h2>
+          <h2 class="text-white text-md font-thin">Résultats du jour dans</h2>
+          <h2 class="text-white text-lg font-bold">00 : 00 : 00</h2>
         </div>
       </div>
       <div class="flex flex-col items-center justify-center text-center">
         <div
-          class="px-1 py-1 bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30"
+          class="px-6 py-4 rounded-lg bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30"
         >
-          <h1 class="text-white text-4xl font-bold">test</h1>
+          <h1 class="text-white text-1xl font-thin">Mon numéro gagnant</h1>
           <astro:fragment>
             <RandomGenerator client:load />
           </astro:fragment>
