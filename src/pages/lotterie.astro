@@ -1,0 +1,18 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Lottery from "../components/lotterie";
+import Elementgauche from "/elementgauche.svg";
+import Elementdroite from "/elementdroite.svg";
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <div class="flex items-center justify-center bg-black h-screen">
+      <div class="shadow-sm">
+        <astro:fragment>
+          <Lottery client:load />
+        </astro:fragment>
+      </div>
+    </div>
+  </main>
+</Layout>
